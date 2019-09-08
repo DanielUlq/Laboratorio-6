@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+	<header>
+		<h1>JavaScript</h1>
+	</header>
+
+	<main>
+		<section id="operacion1">
+			<h3>Funcion 1: calcula la suma de 2 valores</h3>
+			<input type="button" onclick="suma()" value="Sumar...">
+		
+			<p>Resultado: </p>
+			<p id="texto"></p>	
+		</section>
+
+		<section id="operacion2">
+			<h3>Funcion 2: Números aleatorios</h3>
+			<input type="button" onclick="numAleatorio()" value="Aleatorio...">	
+			<p>Resultado:</p>
+			<p id="result1"></p>
+			<p id="result2"></p>
+			<p id="result3"></p>
+					
+		</section>
+
+		<section id="operacion3">
+			<h3>Funcion 3: calcula el número mayor entre dos valores</h3>
+			<label id="lab1">Número 1:</label>
+			<input type="text" id="tex1" placeholder="---Número 1---">
+			<br>
+			<label id="lab2">Número 2:</label>
+			<input type="text" id="tex2" placeholder="---Número 2---">
+			<br>
+			<input type="button" onclick="mayor()" value="Mayor...">
+			<p>Resultado:</p>
+			<p id="resultadoMayor"></p>
+		</section>
+
+		<section id="operacion4">
+			<h3>Funcion 4: calcula el número menor entre dos valores</h3>
+			<label id="lab3">Número 1:</label>
+			<input type="text" id="tex3" placeholder="---Número 1---">
+			<br>
+			<label id="lab4">Número 2:</label>
+			<input type="text" id="tex4" placeholder="---Número 2---">
+			<br>
+			<input type="button" onclick="menor()" value="Menor...">
+			<p>Resultado:</p>
+			<p id="resultadoMenor"></p>
+		</section>
+
+		<section id="operacion5">
+			<h3>Funcion 5: compuertas lógicas</h3>
+			<label id="entrada1">Entrada 1</label>
+			<input type="text" id="ent1" placeholder="Entrada 1">
+			<br>
+			<label id="entrada2">Entrada 2 </label>
+			<input type="text" id="ent2" placeholder="Entrada 2">
+			<p>Resultado:</p>
+			<p id="resultadoComp"></p>
+			<br>
+			<div class="compuertas">
+				<div class="comp">
+					<img src="imagenes/and.png" onclick="compuertaAND()">
+					<h4>AND</h4>					
+				</div>
+
+				<div class="comp">
+					<img src="imagenes/or.png" onclick="compuertaOR()">
+					<h4>OR</h4>									
+				</div>
+
+				<div class="comp">
+					<img src="imagenes/nand.png" onclick="compuertaNAND()">
+					<h4>NAND</h4>						
+				</div>
+
+				<div class="comp">
+					<img src="imagenes/nor.png" onclick="compuertaNOR()">
+					<h4>NOR</h4>	
+				</div>
+
+				<div class="comp">
+					<img src="imagenes/xor.png" onclick="compuertaXOR()">
+					<h4>XOR</h4>					
+				</div>
+
+				<div class="comp">
+					<img src="imagenes/xnor.png" onclick="compuertaXNOR()">
+					<h4>XNOR</h4>		
+				</div>																							
+			</div>
+
+		</section>
+
+	</main>
+
+
+</body>
+</html>
